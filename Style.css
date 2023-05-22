@@ -1,3 +1,20 @@
-h1{
-    color: rosybrown
+
+.contenedor_cabecera{
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    text-align: right;
+    justify-content: center;
+}
+
+.elemento{
+    padding: 10;
+}
+
+.flex_direction_column {
+    flex-direction: column;
+}
+
+.logo{
+    text-align: center;
 }
