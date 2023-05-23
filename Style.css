@@ -1,20 +1,153 @@
 
-.contenedor_cabecera{
+header {
+    width: 100%;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header nav {
     display: flex;
-    padding: 20px;
-    background-color: white;
-    text-align: right;
+    justify-content: flex-end;
+}
+
+header nav .Menu_superior {
+    width: 250px;
+    height: auto;
+    display: flex;
     justify-content: center;
+    list-style: none;
+    align-items: center;
 }
 
-.elemento{
-    padding: 10;
+nav .Menu_superior a {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
 }
 
-.flex_direction_column {
-    flex-direction: column;
+nav .Menu_superior img {
+    border-radius: 50px;
+    margin-left: 10px;
 }
 
-.logo{
+
+/*Logo y botones*/
+
+main {
+    margin-top: 10px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+main .logo {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+main .container {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .container .iconoscontainer {
+    width: 450px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .iconoscontainer input {
+    width: 400px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+
+.iconoscontainer:hover {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.651);
+}
+
+.iconolupa {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.iconomicrofono {
+    cursor: pointer;
+}
+
+.botones {
+    width: 530px;
+    margin: 0 auto;
+
+}
+
+.botones div {
+    display: inline-block;
+}
+
+.botones button {
+    height: 30px;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 14px;
+    color: black;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.botones button:hover {
+    border: 1px solid gray;
+    box-shadow: 1px rgba(0, 0, 0, 0.119);
+    color: black
+}
+
+
+/*Footer*/
+
+footer {
+    width: 1215px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgba(239, 239, 239, 0.779);
+    border: 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    
+}
+
+footer .footer-left {
+    justify-content: left;
+}
+
+footer .footer-right {
+    justify-content: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+
 }
